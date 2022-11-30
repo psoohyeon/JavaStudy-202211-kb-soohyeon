@@ -6,7 +6,7 @@ package j11_상속;
 
     */
 
-public class B extends A{
+public class B extends A{ // B가 A를 상속하겠다.
 
     private String b;
 
@@ -14,6 +14,9 @@ public class B extends A{
         b = getA();
 
 
+    }
+    public void dog(){
+        System.out.println("개가아니다.");
     }
 
 }

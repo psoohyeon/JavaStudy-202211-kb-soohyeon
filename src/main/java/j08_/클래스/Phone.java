@@ -5,7 +5,9 @@ public class Phone {
     String company;
     String model;
 
-    Phone() {}
+    Phone() {
+
+    }// 생성자
     // 반환 자료형이 없음, 클래스 명이 똑같음
     Phone(String c,String m){
         System.out.println("생성자 호출?");

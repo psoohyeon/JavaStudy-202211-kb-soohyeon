@@ -19,5 +19,6 @@ public class PhoneMain {
         galaxyS22.printPhoneCompany();
         galaxyS22.printPhoneModel();
 
+
     }
 }

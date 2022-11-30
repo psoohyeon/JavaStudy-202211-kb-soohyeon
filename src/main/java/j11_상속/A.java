@@ -9,4 +9,7 @@ public class A {
 
 
     }
+    public void dog(){
+        System.out.println("개다");
+    }
 }

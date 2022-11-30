@@ -13,10 +13,10 @@ public class Calc {
 
     public static int add(int x, int y) {
         return  x + y;
-    }
+    } // 자료형인 경우 리턴이 있어야한다.
     public static int sub(int x, int y) {
         return  x - y;
-    }
+    } // 메소드의 자료형과 리턴값의 자료형이 같아야 한다.
     public static int mul(int x, int y) {
         return  x * y;
     }

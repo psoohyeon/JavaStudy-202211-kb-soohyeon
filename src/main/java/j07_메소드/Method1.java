@@ -18,7 +18,7 @@ public class Method1 {
     public static int method3(int a, int b){
         System.out.println("메소드2 호출");
         System.out.println("매개변수 a : " + a);
-        System.out.println("매개변수 a : " + b);
+        System.out.println("매개변수 b : " + b);
         System.out.println("a + b = " + (a + b));
         System.out.println();
         return a + b;
