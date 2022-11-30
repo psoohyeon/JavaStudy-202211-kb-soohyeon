@@ -2,6 +2,7 @@ package j16_컬렉션.Map;
 
 import java.util.ArrayList;
 import java.util.HashMap;
+import java.util.HashSet;
 import java.util.List;
 import java.util.Map;
 import java.util.Map.Entry;
@@ -53,15 +54,45 @@ public class MapMethod {
 		
 		System.out.println(((List<String>) map.get("hobby")).get(2));
 	
-		Set<Entry<String, Object>> userEntry = map.entrySet();
+		Set<Entry<String, Object>> userEntry = map.entrySet(); // map을 entrySet형태로 바꿔라 
+		// Entry는 Key, Value 한쌍으로 같이 나옴 
+		// set,list -> {} map -> []
 		
-		List<Map<String, Object>> listMap = new ArrayList<>();
+		List<Map<String, Object>> listMap = new ArrayList<>(); 
+		
+		Set<String> names = new HashSet<>(); // 순서, 중복 없음
+		names.add("김준일");
+		names.add("김준이");
+		names.add("김준삼");
+		names.add("김준사");
+		names.add("김준오");
+		
+		
+		for(String name : names) {
+			System.out.println(name);
+		}
+
 		
 		for(Entry<String, Object> entry : userEntry) {
-			System.out.println(entry.getKey());
-			System.out.println(entry.getValue());
+			System.out.println(entry.getKey() + " : " + entry.getValue());
 		}
 		
+		System.out.println();
+		/*===================================================================*/
+		
+		Set<String> keys = map.keySet(); // key 값이 String 전부 String객체로 만들어준다
+		for(String key : keys) {
+			System.out.println(key);
+			System.out.println(map.get(key));
+		}
+		
+		System.out.println("=================================");
+		System.out.println(map.values());
+		
+		for(Object obj : map.values()) { //컬렉션 객체
+			System.out.println(obj);
+			
+		}
 		
 		
 		
