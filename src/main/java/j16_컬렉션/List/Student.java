@@ -10,10 +10,9 @@ import java.util.List;
 
 public class Student {
 
-    private int studentId;
-    private String name;
-    private int age;
-    private List<Hobby> hobbyList;
-
+	private int studentId;
+	private String name;
+	private int age;
+	private List<Hobby> hobbyList;
 
 }

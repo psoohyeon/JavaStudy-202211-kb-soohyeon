@@ -8,7 +8,7 @@ import lombok.Data;
 
 public class Hobby {
 
-    private int id;
-    private String hobbyName;
+	private int id;
+	private String hobbyName;
 
 }

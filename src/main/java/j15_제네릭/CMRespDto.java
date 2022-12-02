@@ -7,7 +7,7 @@ import lombok.Data;
 @Data
 
 public class CMRespDto<T> {
-    private String msg;
-    private T data;
+	private String msg;
+	private T data;
 
 }
